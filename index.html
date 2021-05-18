@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="okvir">
+        <div class="datum">
+            <input type="date"/>    
+            <button onclick="window.print()">Stampa</button>
+        </div>
+        <div class="polje">
+            <input class="ime vel" value="Ime: " />
+            <input class="jmbg vel" type="text" value="JMBG: " />
+            <input class="adresa vel" value="Adr: " />
+            <input class="tel vel" type="text" value="Tel: " />
+            <input class="vakcina vel" type="text" value="I " />
+            <input class="vakcina2 vel" type="text" value="II " />
+        </div>
+        <div class="polje">
+            <input class="ime vel" value="Ime: " />
+            <input class="jmbg vel" type="text" value="JMBG: " />
+            <input class="adresa vel" value="Adr: " />
+            <input class="tel vel" type="text" value="Tel: " />
+            <input class="vakcina vel" type="text" value="I " />
+            <input class="vakcina2 vel" type="text" value="II " />
+        </div>
+        <div class="polje">
+            <input class="ime vel" value="Ime: " />
+            <input class="jmbg vel" type="text" value="JMBG: " />
+            <input class="adresa vel" value="Adr: " />
+            <input class="tel vel" type="text" value="Tel: " />
+            <input class="vakcina vel" type="text" value="I " />
+            <input class="vakcina2 vel" type="text" value="II " />
+        </div>
+        <div class="polje">
+            <input class="ime vel" value="Ime: " />
+            <input class="jmbg vel" type="text" value="JMBG: " />
+            <input class="adresa vel" value="Adr: " />
+            <input class="tel vel" type="text" value="Tel: " />
+            <input class="vakcina vel" type="text" value="I " />
+            <input class="vakcina2 vel" type="text" value="II " />
+        </div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            border: 0.5px solid black;
+            padding: 10px;
+        }
+        .datum {
+            text-align: center;
+        }
+        .polje {
+            border-radius: 3px;
+            margin-top: 5px;
+            margin-bottom: 5px;            
+            height: 23%;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 40px 40px 200px;
+            justify-content: center;
+        }
+        #okvir {
+            height: 90vh;
+            width: 600px;
+            border: none;
+        }
+        input {
+            padding-bottom: 5px;
+        }
+        .jmbg {
+            grid-row: 2;
+            grid-column: 1;
+        }
+        .adresa {
+            grid-row: 1;
+            grid-column: 2;
+        }
+        .tel {
+            grid-row: 2;
+            grid-column: 2;
+        }
+        .vel {
+            width: 180px;
+            height: 30px;
+        }
+        .vakcina {
+            grid-row: 1;
+            grid-column: 3;
+        }
+        .vakcina1 {
+            grid-row: 2;
+            grid-column: 3;
+        }
+        @media print {
+    input {
+        border: none;
+        border-bottom: 1px solid black;
+        }
+    button {
+        visibility: hidden;
+    }
+}
+    </style>
+</body>
+</html>
